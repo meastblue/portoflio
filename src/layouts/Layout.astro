@@ -1,0 +1,227 @@
+---
+import "../styles/globals.css";
+
+const siteUrl = "https://m-amalou.me";
+const siteName = "Massinissa Amalou";
+const siteTitle = "Massinissa Amalou - Architecte Logiciel & Solution | Paris";
+const siteDescription = "Massinissa Amalou - Architecte Logiciel & Solution a Paris. Expert en conception d'architectures applicatives, gouvernance d'API, urbanisation de systemes. Developpeur Fullstack React, Angular, Vue.js, NestJS.";
+const siteDescriptionShort = "Expert en architectures applicatives et gouvernance d'API. Portfolio developpeur Fullstack.";
+const ogImage = `${siteUrl}/og-image.png`;
+const twitterHandle = "@m_amalou";
+---
+
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Preconnect pour les ressources critiques -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+        <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+        <link rel="dns-prefetch" href="https://linkedin.com" />
+        <link rel="dns-prefetch" href="https://github.com" />
+        <link rel="dns-prefetch" href="https://bsky.app" />
+
+        <!-- SEO Meta Tags de base -->
+        <title>{siteTitle}</title>
+        <meta name="description" content={siteDescription} />
+        <meta name="keywords" content="Massinissa Amalou, architecte logiciel, architecte solution, software architect, gouvernance API, developpeur fullstack, fullstack developer, React, Angular, Vue.js, NestJS, Paris, France" />
+        <meta name="author" content={siteName} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="generator" content={Astro.generator} />
+
+        <!-- URL Canonique -->
+        <link rel="canonical" href={siteUrl} />
+
+        <!-- Langues alternatives (hreflang) -->
+        <link rel="alternate" hreflang="fr" href={siteUrl} />
+        <link rel="alternate" hreflang="en" href={`${siteUrl}?lang=en`} />
+        <link rel="alternate" hreflang="x-default" href={siteUrl} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDescriptionShort} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${siteName} - Portfolio`} />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:site_name" content={siteName} />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={siteUrl} />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescriptionShort} />
+        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image:alt" content={`${siteName} - Portfolio`} />
+        <meta name="twitter:creator" content={twitterHandle} />
+        <meta name="twitter:site" content={twitterHandle} />
+
+        <!-- Favicon et icones -->
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+
+        <!-- Theme et PWA -->
+        <meta name="theme-color" content="#0079ff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0079ff" media="(prefers-color-scheme: dark)" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content={siteName} />
+        <meta name="application-name" content={siteName} />
+        <meta name="msapplication-TileColor" content="#0079ff" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+
+        <!-- Verification pour moteurs de recherche (a remplir) -->
+        <!-- <meta name="google-site-verification" content="VOTRE_CODE_GOOGLE" /> -->
+        <!-- <meta name="msvalidate.01" content="VOTRE_CODE_BING" /> -->
+
+        <!-- Structured Data JSON-LD -->
+        <script type="application/ld+json" is:inline>
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://m-amalou.me/#website",
+                        "url": "https://m-amalou.me",
+                        "name": "Massinissa Amalou",
+                        "description": "Portfolio de Massinissa Amalou - Architecte Logiciel & Solution",
+                        "inLanguage": ["fr-FR", "en-US"],
+                        "publisher": {
+                            "@id": "https://m-amalou.me/#person"
+                        }
+                    },
+                    {
+                        "@type": "Person",
+                        "@id": "https://m-amalou.me/#person",
+                        "name": "Massinissa Amalou",
+                        "alternateName": ["Amalou Massinissa", "M. Amalou"],
+                        "givenName": "Massinissa",
+                        "familyName": "Amalou",
+                        "jobTitle": "Architecte Logiciel & Solution",
+                        "description": "Expert en conception d'architectures applicatives, gouvernance d'API et developpement fullstack",
+                        "url": "https://m-amalou.me",
+                        "image": "https://m-amalou.me/og-image.png",
+                        "sameAs": [
+                            "https://linkedin.com/in/massinissa-amalou",
+                            "https://github.com/massinissa-amalou",
+                            "https://bsky.app/profile/massinissa.bsky.social"
+                        ],
+                        "knowsAbout": [
+                            "Software Architecture",
+                            "API Governance",
+                            "React",
+                            "Angular",
+                            "Vue.js",
+                            "NestJS",
+                            "TypeScript",
+                            "Node.js"
+                        ],
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Paris",
+                            "addressRegion": "Ile-de-France",
+                            "addressCountry": "FR"
+                        },
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "Freelance"
+                        }
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://m-amalou.me/#webpage",
+                        "url": "https://m-amalou.me",
+                        "name": "Massinissa Amalou - Architecte Logiciel & Solution | Paris",
+                        "description": "Portfolio de Massinissa Amalou - Expert en architectures applicatives et developpement fullstack",
+                        "isPartOf": {
+                            "@id": "https://m-amalou.me/#website"
+                        },
+                        "about": {
+                            "@id": "https://m-amalou.me/#person"
+                        },
+                        "inLanguage": "fr-FR"
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://m-amalou.me/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Accueil",
+                                "item": "https://m-amalou.me"
+                            }
+                        ]
+                    }
+                ]
+            }
+        </script>
+
+        <!-- Script de theme (evite le flash) -->
+        <script is:inline>
+            (function () {
+                var theme = localStorage.getItem("theme");
+                if (theme === "dark") {
+                    document.documentElement.classList.add("dark");
+                } else if (theme === "light") {
+                    document.documentElement.classList.remove("dark");
+                } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    document.documentElement.classList.add("dark");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                    document.documentElement.classList.remove("dark");
+                }
+
+                var lang = localStorage.getItem("language");
+                if (lang === "fr" || lang === "en") {
+                    document.documentElement.lang = lang;
+                } else {
+                    localStorage.setItem("language", "fr");
+                    document.documentElement.lang = "fr";
+                }
+            })();
+        </script>
+    </head>
+    <body class="font-sharp antialiased">
+        <!-- Skip Link pour accessibilite -->
+        <a
+            href="#main-content"
+            class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[var(--color-accent)] text-white px-4 py-2 rounded-lg z-[9999] font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[var(--color-accent)]"
+        >
+            <span lang="fr">Aller au contenu principal</span>
+        </a>
+
+        <main id="main-content" tabindex="-1">
+            <slot />
+        </main>
+
+        <!-- Noscript fallback -->
+        <noscript>
+            <style>
+                .animate-fadeInUp,
+                .animate-fadeInDown,
+                .animate-fadeInLeft,
+                .animate-fadeInRight,
+                .animate-scaleIn {
+                    opacity: 1 !important;
+                    transform: none !important;
+                    animation: none !important;
+                }
+            </style>
+        </noscript>
+    </body>
+</html>

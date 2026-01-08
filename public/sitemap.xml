@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Page principale -->
+  <url>
+    <loc>https://m-amalou.me/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://m-amalou.me/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://m-amalou.me/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://m-amalou.me/"/>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Section A propos -->
+  <url>
+    <loc>https://m-amalou.me/#about</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Section Carriere -->
+  <url>
+    <loc>https://m-amalou.me/#career</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Section Projets -->
+  <url>
+    <loc>https://m-amalou.me/#projects</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section Competences -->
+  <url>
+    <loc>https://m-amalou.me/#skills</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section Contact -->
+  <url>
+    <loc>https://m-amalou.me/#contact</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
